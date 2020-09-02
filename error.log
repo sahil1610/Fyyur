@@ -1,0 +1,117 @@
+
+2020-09-02 21:50:51,210 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:80]
+2020-09-02 21:51:08,987 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:80]
+2020-09-02 21:51:20,820 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:77]
+2020-09-02 21:51:27,631 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:75]
+2020-09-02 21:51:35,371 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:71]
+2020-09-02 21:51:50,567 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 21:53:27,826 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 22:19:27,668 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 22:23:28,243 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 22:23:30,846 ERROR: Exception on /shows [GET] [in /Users/sahilgoyal/.pyenv/versions/udacity/lib/python3.7/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/Users/sahilgoyal/.pyenv/versions/udacity/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/sahilgoyal/.pyenv/versions/udacity/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/sahilgoyal/.pyenv/versions/udacity/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/sahilgoyal/.pyenv/versions/udacity/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/sahilgoyal/.pyenv/versions/udacity/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/sahilgoyal/.pyenv/versions/udacity/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/show/show.py", line 20, in shows
+    return render_template('pages/shows.html', shows=data)
+  File "/Users/sahilgoyal/.pyenv/versions/udacity/lib/python3.7/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/sahilgoyal/.pyenv/versions/udacity/lib/python3.7/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/sahilgoyal/.pyenv/versions/udacity/lib/python3.7/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/sahilgoyal/.pyenv/versions/udacity/lib/python3.7/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/sahilgoyal/.pyenv/versions/udacity/lib/python3.7/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/sahilgoyal/.pyenv/versions/udacity/lib/python3.7/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/sahilgoyal/.pyenv/versions/udacity/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/sahilgoyal/.pyenv/versions/udacity/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/show/templates/pages/shows.html", line 18, in template
+    {% else % }
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got '%'
+2020-09-02 22:23:32,423 ERROR: Exception on /shows [GET] [in /Users/sahilgoyal/.pyenv/versions/udacity/lib/python3.7/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/Users/sahilgoyal/.pyenv/versions/udacity/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/sahilgoyal/.pyenv/versions/udacity/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/sahilgoyal/.pyenv/versions/udacity/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/sahilgoyal/.pyenv/versions/udacity/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/sahilgoyal/.pyenv/versions/udacity/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/sahilgoyal/.pyenv/versions/udacity/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/show/show.py", line 20, in shows
+    return render_template('pages/shows.html', shows=data)
+  File "/Users/sahilgoyal/.pyenv/versions/udacity/lib/python3.7/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/sahilgoyal/.pyenv/versions/udacity/lib/python3.7/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/sahilgoyal/.pyenv/versions/udacity/lib/python3.7/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/sahilgoyal/.pyenv/versions/udacity/lib/python3.7/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/sahilgoyal/.pyenv/versions/udacity/lib/python3.7/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/sahilgoyal/.pyenv/versions/udacity/lib/python3.7/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/sahilgoyal/.pyenv/versions/udacity/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/sahilgoyal/.pyenv/versions/udacity/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/show/templates/pages/shows.html", line 18, in template
+    {% else % }
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got '%'
+2020-09-02 22:23:46,405 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 22:26:54,396 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 22:28:20,974 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 22:30:16,532 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 22:30:16,894 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 22:31:56,037 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 22:49:06,453 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 22:50:43,628 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 22:53:07,063 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 22:53:07,660 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 22:53:57,057 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 22:54:40,258 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 22:54:49,971 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 22:55:36,354 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 22:55:39,922 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 22:56:06,113 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 23:03:11,497 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 23:05:38,286 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 23:06:10,224 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 23:06:21,118 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 23:06:26,845 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 23:06:30,822 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 23:08:43,561 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 23:08:48,413 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 23:08:58,282 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 23:09:03,272 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 23:09:12,340 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 23:09:18,271 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 23:09:47,896 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 23:09:54,644 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 23:09:59,552 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 23:10:06,309 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 23:10:09,397 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 23:11:27,365 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 23:11:54,610 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 23:11:59,535 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
+2020-09-02 23:12:19,466 INFO: errors [in /Users/sahilgoyal/Documents/Udacity/Nanodegree/FSND/projects/01_fyyur/app.py:68]
